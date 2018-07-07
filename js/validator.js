@@ -6,6 +6,7 @@ $(function(){
 
 		this.is_valid = function(new_val){//new_val是为了使val值随着输入动态响应
 			var key;
+			if(new_val !== undefined)
 			val = new_val || val;
 
 			//如果不是必填项且用户未填写任何内容则直接判定为合法
